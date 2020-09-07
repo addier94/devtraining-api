@@ -6,7 +6,8 @@ const {
   updateBootcamp,
   deleteBootcamp,
   getBootcampsInRadius,
-  bootcampPhotoUpload
+  bootcampPhotoUpload,
+  getBootcampsByOwnerUser
 } = require('../controllers/bootcamps');
 
 const Bootcamp = require('../models/Bootcamp');
@@ -34,6 +35,10 @@ router
   .route('/')
   .get(advancedResults(Bootcamp, 'courses'), getBootcamps)
   .post(protect, authorize('publisher', 'admin'), createBootcamp);
+
+router
+  .route('/user/:id')
+  .get(getBootcampsByOwnerUser);
 
 router
   .route('/:id')
