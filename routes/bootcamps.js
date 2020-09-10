@@ -38,7 +38,7 @@ router
 
 router
   .route('/user/:id')
-  .get(getBootcampsByOwnerUser);
+  .get(protect, authorize('publisher', 'admin'), getBootcampsByOwnerUser);
 
 router
   .route('/:id')
