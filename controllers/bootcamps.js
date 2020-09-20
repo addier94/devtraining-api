@@ -15,7 +15,7 @@ exports.getBootcamps = asyncHandler(async (req, res, next) => {
 // @route     GET /api/v1/bootcamps/user/:id
 // @access    Public
 exports.getBootcampsByOwnerUser = asyncHandler(async (req, res, next) => {
-  const bootcamps = await Bootcamp.find({ user: req.params.id }).populate('courses');
+  const bootcamps = await Bootcamp.findOne({ user: req.params.id }).populate('courses');
 
   if (!bootcamps) {
     return next(
