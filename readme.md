@@ -1,6 +1,6 @@
-# DevTraining API
+# Bootcamp API
 
-> Backend API for DevTraining application, which is a bootcamp directory website
+> Backend API for Bootcampapi application, which is a bootcamp directory website
 
 ## Usage
 
@@ -36,9 +36,9 @@ node seeder -i
 
 ## Demo
 
-The API is live at [alfredofernandez.me](https://alfredofernandez.me)
+The API is live at [bootcampapifernandezalfredo.com](https://bootcamp)
 
-Extensive documentation with examples [here](https://documenter.getpostman.com/view/9630047/SztK25HT?version=latest#5bb4d405-6d75-4e88-9a4c-0ca83b2c7fa3)
+Extensive documentation with examples [here](https://bootcamp.fernandezalfredo.com/)
 
 - Version: 1.0.0
 - License: MIT
